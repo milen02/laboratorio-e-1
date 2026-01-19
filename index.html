@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../assets/lo.png">
+    <title>Vientos de Gloria – Materiales de Vidrio para Laboratorio</title>
+    
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div  class="logo"> 
+                <img src="../assets/lo.png" alt="logo" class="logo-image">
+                <div class="logo-text">
+                    <span class="logos-text">Vientos de Gloria</span>
+                    <span class="sub-text">Materiales para Laboratorio,Fisica y Biologia</span>
+
+                </div>
+            
+            </div>
+                          
+            <div class="nav-wrapper">
+                <nav class="nav-menu" id="navMenu">
+                    <a href="#home" class="nav-link">🏠 Inicio</a>
+                    <a href="#bestsellers-section" class="nav-link">⭐ Más Vendidos</a>
+                    <a href="#tubes-section" class="nav-link">🧪 Tubos y Matraces</a>
+                    <a href="#measurement-section" class="nav-link">📏 Medición</a>
+                     <a href="https://wa.me/59178949069?text=Hola,%20deseo%20realizar%20una%20consulta" 
+                    class="nav-link" 
+                    target="_blank">
+                    📞 Contacto
+                    </a>        
+                  </nav>
+            </div>
+
+            <div class="header-actions">
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                <button class="cart-btn" onclick="openCart()">
+                    🛒 Carrito
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero" id="home">
+        <h1>Especialistas en proveer equipos y material de Laboratorio,Fisica y Biologia</h1>
+        <p>Entendemos la precisión que tu trabajo requiere, ofrecemos productos para:
+          
+        </p>
+       <div class="img-prot">
+    <div class="card-producto">
+        <div class="card-image-container">
+            <img src="../assets/oi.png" alt="Torso Humano" class="img-zoom">
+        </div>
+        <div class="card-info">
+            <h3>Modelo anatómico oído</h3>
+            <p>Modelo detallado para estudio médico y educativo.</p>
+            <span class="precio">650 bs</span>
+            <button class="add-btn" onclick="addToCart(21, 'pro')">Agregar al Carrito</button>
+        </div>
+    </div>
+    
+    <div class="card-producto">
+        <div class="card-image-container">
+            <img src="../assets/esq.jpg" alt="Esqueleto" class="img-zoom">
+        </div>
+        <div class="card-info">
+            <h3>Esqueleto Completo</h3>
+            <p>Estructura ósea a escala real con articulaciones.</p>
+            <span class="precio">2900 bs</span>
+            <button class="add-btn" onclick="addToCart(22, 'pro')">Agregar al Carrito</button>
+        </div>
+    </div>
+
+    <div class="card-producto">
+        <div class="card-image-container">
+            <img src="../assets/ojo.png" alt="Quit RPC" class="img-zoom">
+        </div>
+        <div class="card-info">
+            <h3>Modelo anatómico ojo</h3>
+            <p>Quit completo RCP</p>
+            <span class="precio">650 bs</span>
+            <button class="add-btn" onclick="addToCart(23, 'pro')">Agregar al Carrito</button>
+        </div>
+    </div>
+    <div class="card-producto">
+        <div class="card-image-container">
+            <img src="../assets/hor.png" alt="ornilla" class="img-zoom">
+        </div>
+        <div class="card-info">
+            <h3>Hornilla electrica</h3>
+            <p>--</p>
+            <span class="precio">180 bs</span>
+            <button class="add-btn" onclick="addToCart(24, 'pro')">Agregar al Carrito</button>
+        </div>
+    </div>
+    <div class="card-producto">
+        <div class="card-image-container">
+            <img src="../assets/ba.png" alt="Esqueleto" class="img-zoom">
+        </div>
+        <div class="card-info">
+            <h3>Blanza</h3>
+            <p>hasta 1kg con 3 decimales</p>
+            <span class="precio">1900 bs</span>
+            <button class="add-btn" onclick="addToCart(25, 'pro')">Agregar al Carrito</button>
+        </div>
+    </div>
+    <div class="card-producto">
+        <div class="card-image-container">
+            <img src="../assets/mic.png" alt="Esqueleto" class="img-zoom">
+        </div>
+        <div class="card-info">
+            <h3>Microscopio biologico</h3>
+            <p>---</p>
+            <span class="precio">5200 bs</span>
+            <button class="add-btn" onclick="addToCart(26, 'pro')">Agregar al Carrito</button>
+        </div>
+    </div>
+    <div class="card-producto">
+        <div class="card-image-container">
+            <img src="../assets/cen.png" alt="Esqueleto" class="img-zoom">
+        </div>
+        <div class="card-info">
+            <h3>centrifugadora</h3>
+            <p>---</p>
+            <span class="precio">1200 bs</span>
+            <button class="add-btn" onclick="addToCart(27, 'pro')">Agregar al Carrito</button>
+        </div>
+    </div>
+    <div class="card-producto">
+        <div class="card-image-container">
+            <img src="../assets/AUTOCL.png" alt="Esqueleto" class="img-zoom">
+        </div>
+        <div class="card-info">
+            <h3>Autocalve</h3>
+            <p>---</p>
+            <span class="precio">19000 bs</span>
+            <button class="add-btn" onclick="addToCart(28, 'pro')">Agregar al Carrito</button>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+
+    <div class="section" id="bestsellers-section">
+        <div class="section-header">
+            <h2 class="section-title">⭐ Más Vendidos</h2>
+            <div class="scroll-controls">
+                <button class="scroll-arrow" onclick="scrollSection('bestsellers', 'left')">◀</button>
+                <button class="scroll-arrow" onclick="scrollSection('bestsellers', 'right')">▶</button>
+            </div>
+        </div>
+        <div class="scroll-wrapper">
+            <div class="scroll-container" id="bestsellers"></div>
+        </div>
+    </div>
+
+    <div class="section" id="tubes-section">
+        <div class="section-header">
+            <h2 class="section-title">🧪Materiales de vidrio</h2>
+            <div class="scroll-controls">
+                <button class="scroll-arrow" onclick="scrollSection('tubesFlasks', 'left')">◀</button>
+                <button class="scroll-arrow" onclick="scrollSection('tubesFlasks', 'right')">▶</button>
+            </div>
+        </div>
+        <div class="scroll-wrapper">
+            <div class="scroll-container" id="tubesFlasks"></div>
+        </div>
+    </div>
+
+    <div class="section" id="measurement-section">
+        <div class="section-header">
+            <h2 class="section-title">📏 Medición y Dosificación</h2>
+            <div class="scroll-controls">
+                <button class="scroll-arrow" onclick="scrollSection('measurement', 'left')">◀</button>
+                <button class="scroll-arrow" onclick="scrollSection('measurement', 'right')">▶</button>
+            </div>
+        </div>
+        <div class="scroll-wrapper">
+            <div class="scroll-container" id="measurement"></div>
+        </div>
+    </div>
+
+    
+   
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <h2>🛒 Tu Carrito</h2>
+            <div id="cartItems"></div>
+            <div class="total" id="totalPrice">Total: $0.00</div>
+            <button class="whatsapp-btn" onclick="sendToWhatsApp()">
+                📱 Confirmar Pedido por WhatsApp
+            </button>
+            <button class="close-modal" onclick="closeCart()">Cerrar</button>
+        </div>
+    </div>
+
+    <script>
+        const products = {
+            pro:[
+                { id: 21, name: 'modelo anatomico oido', description: 'Modelo detallado para estudio médico y educativo.', price: 650, icon: '👩‍🔬' },
+                { id: 22, name: 'Esqueleto Completo', description: 'Estructura ósea a escala real con articulaciones.', price: 2900, icon: '☠️' },
+                { id: 23, name: 'modelo anatomico ojo', description: 'Quit completo RCP', price: 650, icon: '📦' },
+                {id:24,name:'Hornilla electrica',description:'--',price:180,icon:'🔥'},
+                {id:25,name:'Balanza',description:'hasta 1kg con 3 decimales',price:1900,icon:'⚖️'},
+                {id:26,name:'Microscopio biologico',description:'---',price:5200,icon:'🔬'},
+                {id:27,name:'centrifugadora',description:'---',price:1200,icon:'🧪'},
+                {id:28,name:'Autoclave',description:'---',price:19000,icon:'🧫'},
+            ],
+            bestsellers: [
+                {id : 0, image: '../assets/buretaA.jpg', name: 'Bureta Tipo A', description: '50 ml', price: 190, icon: '🧪', bestseller: true },
+                {id : 1, image: '../assets/buretaA.jpg', name: 'Bureta Tipo A', description: '25 ml', price: 160, icon: '🧪', bestseller: true },
+                {id : 2, image:'assets/pig.png', name: 'pipeta graduada tipo A', description: '10 ml', price: 22.00, icon: '💉', bestseller: true },
+                {id : 3, image:'assets/pig.png', name: 'pipeta graduada tipo A', description: '5 ml', price: 22.00, icon: '💉', bestseller: true },
+                {id : 4, image:'assets/pig.png', name: 'pipeta graduada tipo A', description: '1 ml', price: 22.00, icon: '💉', bestseller: true },
+{id : 5, image:'assets/soporte.png', name: 'soporte universal', description: 'soporte universal inox', price: 150, icon: '💧', bestseller: true },
+                { id: 6, image: '../assets/vasop.png', name: 'Vaso precipitado 250ml', description: 'material plastico', price: 16, icon: '🧪', bestseller: true },
+                {id :7,image:'assets/embudo.png', name: 'embudo de vidrio', description: '75mm', price: 40.00, icon: '💧', bestseller: true },
+                {id :8,image:'assets/embudo.png', name: 'embudo de vidrio', description: '50mm', price: 35.00, icon: '💧', bestseller: true },
+
+             ],
+            tubesFlasks: [
+                { id: 9, image: '../assets/pipaf.png', name: 'pipeta aforada tipo A', description: '25 ml', price: 45.00, icon: '🧪' },
+                { id: 10, image: '../assets/pipaf.png', name: 'pipeta aforada tipo A', description: '10 ml', price: 45.00, icon: '⚗️' },
+                 { id: 11, image: '../assets/MATRAZ AFORADO.jpg', name: 'Matraz Aforado 50ml', description: 'Alta precisión volumétrica', price: 38, icon: '⚗️' },
+                                  { id: 8, image: '../assets/MATRAZ AFORADO.jpg', name: 'Matraz Aforado 500ml', description: 'Alta precisión volumétrica', price: 130, icon: '⚗️' },
+                 { id: 12, image: '../assets/MATRAZ AFORADO.jpg', name: 'Matraz Aforado 1000ml', description: 'Alta precisión volumétrica', price: 150, icon: '⚗️' },
+                {id : 13, image:'../assets/pro.png', name: 'probeta ', description: '25ml', price: 35, icon: '📏'},
+                {id : 14, image:'../assets/pro.png', name: 'probeta ', description: '100ml', price: 40, icon: '📏'},
+                {id : 15, image:'../assets/pro.png', name: 'probeta', description: '500ml', price: 115, icon: '📏'},
+                {id : 16, image:'../assets/pro.png', name: 'probeta ', description: '1000ml', price: 150, icon: '📏'},
+                 {id :17,image:'../assets/cajapetri.png', name: 'Caja petri', description: 'estabilizantes 60x15 mm', price: 20.00, icon: '🧫'},
+                 {id :18,image:'../assets/cap.png', name: 'Capsula de evaporacion', description: '120ml', price: 25.00, icon: '📏'     },
+                 {id:19,image:'../assets/regilla.png',name:'rejilla para mechero',description:'15x15 cm',price:18.00,icon:'🔥'     },
+                {id:20,image:'../assets/nuez.png',name:'nuez doble metal',description:'metal',price:65.00,icon:'🧪'     },
+                {id:29,image:'../assets/aro.png',name:'aro metalico con nuez',description:'aro metalico con nuez',price:110.00,icon:'🧪'     },
+                {id : 30,image:'../assets/pinzamariposa.png', name: 'pinza mariposa', description: 'pinza mariposa', price: 100.00, icon: '🧪'     },
+            {id:    31,image:'../assets/TUVO.jpg',name:'tuvo de ensayo',description:'13x100 mm',price:2.50,icon:'🧪'     },
+            {id:32,image:'../assets/termo.png',name:'termometro',description:'--',price:40.00,icon:'🌡️'     },
+            {id:33,image:'../assets/GRAINOX.jpg',name:'gradilla para tuvo de ensayo',description:'material plastico',price:30.00,icon:'🧪'     },
+            {id:34,image:'../assets/portaobj.png',name:'portaobjetos',description:'---',price:30.00,icon:'🔬'     },
+            {id:35,image:'../assets/cubreobj.png',name:'cubre objeto',description:'---',price:25.00,icon:'🔬'     },  
+                        {id:36,image:'../assets/cucharilla.png',name:'cucharilla inox',description:'---',price:12,icon:'🔬'     },  
+                                    {id:37,image:'../assets/mechero.png',name:'mechero',description:'---',price:130.00,icon:'🔬'     }, 
+                                    {id:38,image:'../assets/cuenta.png',name:'cuenta gotas',description:'---',price:15.00,icon:'💧'     } ,
+                                    {id:39,image:'../assets/ambar.png',name:'Frasco ambar de vidrio',description:'250 ml',price:60.00,icon:'💉'     },
+                                    {id:40,image:'../assets/ambar.png',name:'Frasco ambar ',description:'material de plastico-500 ml',price:8.00,icon:'💉'     },
+                                    {id:41,image:'../assets/FRACO.jpg',name:'Frasco de vidrio graduado',description:'500 ml',price:75.00,icon:'💉'     },
+                                    {id:42,image:'../assets/FRACO.jpg',name:'Frasco de vidrio graduado',description:'1000 ml',price:85.00,icon:'💉'     },
+
+
+
+
+
+        ],
+            measurement: [
+                {id:43,image:'assets/VIDRIO DE RELOJ.jpg', name: 'vidrio de reloj', description: 'Clase A- 60 mm ', price: 10.00, icon: '💉' },
+                 { id: 44,image:'assets/esp.png', name: 'espatula', description: 'Clase A ', price: 12, icon: '💉' },
+                { id: 45,image:'assets/pi.png', name: 'piseta 500ml', description: 'para agua destilada 500ml', price: 30, icon: '📏' },
+                { id: 46,image:'assets/pera.png', name: 'pera de goma', description: 'pera de goma', price: 55.00, icon: '💉' },
+                 {id : 47, image:'assets/varilla.png', name: 'varilas de vidrio', description: 'varillas de vidrio', price: 12.00, icon: '💧'     },
+                 {id:48,image:'assets/embudo.png',name:'embudo',description   :'75mm',price:16.00,icon:'💧'     }
+                 
+
+
+
+
+            ],
+            
+        };
+
+        let cart = [];
+
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Cerrar menú al hacer clic en un enlace
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    const navMenu = document.getElementById('navMenu');
+                    if (window.innerWidth <= 768) {
+                        navMenu.classList.remove('active');
+                    }
+                });
+            });
+        });
+
+        function scrollSection(sectionId, direction) {
+            const container = document.getElementById(sectionId);
+            const scrollAmount = 300;
+            
+            if (direction === 'left') {
+                container.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
+            } else {
+                container.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        function renderProducts(category, containerId) {
+            const container = document.getElementById(containerId);
+            products[category].forEach(product => {
+                const card = document.createElement('div');
+                card.className = 'product-card';
+                card.innerHTML = `
+                    ${product.bestseller ? '<div class="bestseller-badge">⭐ MÁS VENDIDO</div>' : ''}
+<div class="product-image-container">
+    <img src="${product.image}" alt="${product.name}" class="product-img-display" width="150px" height="150px">
+</div>                     <div class="product-name">${product.name}</div>
+                    <div class="product-description">${product.description}</div>
+                    <div class="product-price">bs${product.price.toFixed(2)}</div>
+                    <button class="add-btn" onclick="addToCart(${product.id}, '${category}')">
+                        Agregar al Carrito
+                    </button>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function addToCart(productId, category) {
+            const product = products[category].find(p => p.id === productId);
+            const existingItem = cart.find(item => item.id === productId);
+            
+            if (existingItem) {
+                existingItem.quantity++;
+            } else {
+                cart.push({ ...product, quantity: 1 });
+            }
+            
+            updateCartCount();
+            showNotification('✅ Producto agregado al carrito');
+        }
+
+        function updateCartCount() {
+            const count = cart.reduce((sum, item) => sum + item.quantity, 0);
+            document.getElementById('cartCount').textContent = count;
+        }
+
+        function openCart() {
+            const modal = document.getElementById('cartModal');
+            const cartItems = document.getElementById('cartItems');
+            
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<div class="empty-cart">Tu carrito está vacío</div>';
+                document.getElementById('totalPrice').textContent = 'Total: $0.00';
+            } else {
+                cartItems.innerHTML = cart.map((item, index) => `
+                    <div class="cart-item">
+                        <div class="cart-item-info">
+                            <div class="cart-item-name">${item.icon} ${item.name}</div>
+                            <div class="cart-item-price">$${item.price.toFixed(2)} c/u</div>
+                        </div>
+                        <div class="quantity-controls">
+                            <button class="qty-btn" onclick="updateQuantity(${index}, -1)">−</button>
+                            <span style="margin: 0 0.5rem; font-weight: bold;">${item.quantity}</span>
+                            <button class="qty-btn" onclick="updateQuantity(${index}, 1)">+</button>
+                            <button class="remove-btn" onclick="removeItem(${index})">🗑️</button>
+                        </div>
+                    </div>
+                `).join('');
+                
+                const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+                document.getElementById('totalPrice').textContent = `Total: bs{total.toFixed(2)}`;
+            }
+            
+            modal.style.display = 'flex';
+        }
+
+        function closeCart() {
+            document.getElementById('cartModal').style.display = 'none';
+        }
+
+        function updateQuantity(index, change) {
+            cart[index].quantity += change;
+            if (cart[index].quantity <= 0) {
+                cart.splice(index, 1);
+            }
+            updateCartCount();
+            openCart();
+        }
+
+        function removeItem(index) {
+            cart.splice(index, 1);
+            updateCartCount();
+            openCart();
+        }
+
+        function sendToWhatsApp() {
+            if (cart.length === 0) {
+                alert('Tu carrito está vacío');
+                return;
+            }
+            
+            let message = '🧪 *PEDIDO VIENTOS DE GLORIA:*%0A%0A';
+            cart.forEach(item => {
+                message += `${item.icon} *${item.name}*%0ACantidad: ${item.quantity}%0APrecio: $${(item.price * item.quantity).toFixed(2)}%0A%0A`;
+            });
+            
+            const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            message += `💰 *TOTAL: $${total.toFixed(2)}*`;
+            
+            // Reemplaza este número con el número de WhatsApp de tu empresa (formato internacional sin +)
+            const phoneNumber = '59178949069';
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+            
+            window.open(whatsappURL, '_blank');
+        }
+
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 100px;
+                right: 20px;
+                background: linear-gradient(135deg, #2ecc71, #27ae60);
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 12px;
+                box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+                z-index: 3000;
+                animation: slideInRight 0.3s ease;
+            `;
+            notification.textContent = message;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.style.animation = 'slideOutRight 0.3s ease';
+                setTimeout(() => notification.remove(), 300);
+            }, 2000);
+        }
+
+        // Renderizar todos los productos al cargar la página
+        renderProducts('bestsellers', 'bestsellers');
+        renderProducts('tubesFlasks', 'tubesFlasks');
+        renderProducts('measurement', 'measurement');
+ 
+        // Cerrar modal al hacer clic fuera
+        window.onclick = function(event) {
+            const modal = document.getElementById('cartModal');
+            if (event.target === modal) {
+                closeCart();
+            }
+        }
+    </script>
+    <a href="https://wa.me/59178949069?text=Hola%20Vientos%20de%20Gloria,%20necesito%20información%20sobre%20materiales%20de%20laboratorio" 
+   class="whatsapp-float" 
+   target="_blank" 
+   rel="noopener noreferrer">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="tooltip-text">¡Escríbenos!</span>
+</a>
+</body>
+</html>
